@@ -28,11 +28,37 @@
 ################################################################################
 # Write your functions below:
 # Body
+def print_spam():
+	print('spam')
 
+def do_twice(f):
+	f()
+	f()
 
+do_twice (print_spam)
 
+def do_twice(f,x):
+	f(x)
+	f(x)
 
+def print_spam(y):
+	print(y)
 
+do_twice (print_spam, 'Test')
+
+def print_twice(string):
+	print (string)
+	print (string)
+
+print_twice ('Just a string')
+
+do_twice (print_twice, 'spam')
+
+def do_four(f,x):
+	do_twice(f,x)
+	do_twice(f,x)
+
+do_four(print_twice, 'Test4')
 
 
 # Write your functions above:
